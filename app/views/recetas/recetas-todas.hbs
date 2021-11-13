@@ -1,0 +1,37 @@
+<h1>Todas las recetas</h1>
+
+<div class="row">
+    {{#each listarTodos}}
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title text-white d-flex justify-content-between aling-items-center"> 
+                        {{this.titulo}} <a href="/recetas/{{this._id}}"><i class="fas fa-edit"></i></a>
+                    </h4>
+                    <h6 class="card-title text-white d-flex justify-content-between aling-items-center">
+                        Descripción 
+                    </h6>
+                    <p>
+                        {{this.descripcion}}
+                    </p>
+                    <h6 class="card-title text-white d-flex justify-content-between aling-items-center">
+                        Ingredientes
+                    </h6>
+                    <p>
+                        {{this.ingredientes}}
+                    </p>
+                    <h6 class="card-title text-white d-flex justify-content-between aling-items-center">
+                        Autor
+                    </h6>
+                    <p>
+                        {{this.autor}}
+                    </p>
+                    <form action="/receta/{{this._id}}?_method=DELETE" method="POST"> 
+                        <input type="hidden" name="_method" value="DELETE">
+                        <button type="submit" class="btn btn-warning btn-block">Eliminar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    {{/each}}
+</div>

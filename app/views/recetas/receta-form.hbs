@@ -1,0 +1,40 @@
+<div class="col-md-4 mx-auto">
+    <div class="card text-center">
+        <div class="card-head">
+            <h2>Nueva Receta ¡Insertala ahora!</h2>
+        </div>
+        <div class="card-body">
+            <form action="/receta/agregar" method="POST">
+                <div class="form-group">
+                    <h6 class="card-title text-white d-flex justify-content-between aling-items-center">
+                        Titulo
+                    </h6>
+                    <input type="text" name="titulo" class="form-control" placeholder="titulo de la receta" autofocus>
+                </div>
+                <div class="form-group">
+                    <h6 class="card-title text-white d-flex justify-content-between aling-items-center">
+                        Descripción
+                    </h6>
+                    <input type="text" name="descripcion" class="form-control" placeholder="descripcion de la receta" autofocus>
+                </div>
+                <div class="form-group">
+                    <h6 class="card-title text-white d-flex justify-content-between aling-items-center">
+                        Ingredientes
+                    </h6>
+                    <input type="text" name="ingredientes" class="form-control" placeholder="ingredientes de la receta" autofocus>
+                </div>
+                <div class="form-group">
+                    <h6 class="card-title text-white d-flex justify-content-between aling-items-center">
+                        Autor
+                    </h6>
+                    <input type="text" name="autor" class="form-control" placeholder="autor de la receta" autofocus>
+                </div>
+                <div class="form-group">
+                    <button class="btn btn-primary btn-block">
+                          Enviar Receta
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,41 @@
+<div class="col-md-4 mx-auto">
+    <div class="card">
+        <div class="card-header">
+            <h3 class="text-center" >
+                ¡Actualiza la Receta!
+            </h3>
+            <div class="card-body">
+                <form action="/recetas/{{actualizar.id}}?_method=PUT" method="POST">
+                <input type="hidden" name="_method" value="PUT">
+                <div class="form-group">
+                    <h6 class="card-title text-white d-flex justify-content-between aling-items-center">
+                        Titulo
+                    </h6>
+                    <input type="text" name="titulo" class="form-control" value="{{actualizar.titulo}}">
+                </div>
+                <div class="form-group">
+                    <h6 class="card-title text-white d-flex justify-content-between aling-items-center">
+                        Descripción
+                    </h6>
+                    <input type="text" name="descripcion" class="form-control" value="{{actualizar.descripcion}}">
+                </div>
+                <div class="form-group">
+                    <h6 class="card-title text-white d-flex justify-content-between aling-items-center">
+                        Ingredientes
+                    </h6>
+                    <input type="text" name="ingredientes" class="form-control" value="{{actualizar.ingredientes}}">
+                </div>
+                <div class="form-group">
+                    <h6 class="card-title text-white d-flex justify-content-between aling-items-center">
+                        Autor
+                    </h6>
+                    <input type="text" name="autor" class="form-control" value="{{actualizar.autor}}">
+                </div>
+                <div class="form-group">
+                   <button class="btn btn-warning btn-block" type="submit">Editar</button>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

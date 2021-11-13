@@ -1,0 +1,40 @@
+<div class="row">
+    <div class="col-md-4 mx-auto">
+        <div class="card">
+            <h3 class="text-center" >
+                ¡Registrate!
+            </h3>
+            <div class="card-body">
+                <form action="/registar/usuario" method="POST">
+                    <div class="form-group">
+                        <h6 class="card-title text-white d-flex justify-content-between aling-items-center">
+                            Nombre
+                        </h6>
+                        <input type="text" name="nombre" class="form-control" value="{{this.nombre}}" placeholder="Coloca el nombre">
+                    </div> 
+                    <div class="form-group">
+                        <h6 class="card-title text-white d-flex justify-content-between aling-items-center">
+                            Correo
+                        </h6>
+                        <input type="email" name="correo" class="form-control" value="{{this.correo}}" placeholder="coloca tu correo">
+                    </div>   
+                    <div class="form-group">
+                        <h6 class="card-title text-white d-flex justify-content-between aling-items-center">
+                            Contraseña
+                        </h6>
+                        <input type="password" name="contraseña" class="form-control" placeholder="Coloca la contraseña correcta">
+                    </div>
+                    <div class="form-group">
+                        <h6 class="card-title text-white d-flex justify-content-between aling-items-center">
+                            Confirma Contraseña
+                        </h6>
+                        <input type="password" name="confirmar_contr" class="form-control" placeholder="Coloca la contraseña correcta para confirmar">
+                    </div>
+                    <button type="submit" class="btn btn-warning btn-block">
+                        Registrarse
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
